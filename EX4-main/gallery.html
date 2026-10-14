@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neighborhood Gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+    <header>
+      <nav>
+        <h1>Neighborhood Gallery</h1>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="intro">
+        <h2>Photo Gallery</h2>
+        <p>
+          Here are some pictures of places and things that make my neighborhood
+          special.
+        </p>
+      </section>
+
+      <!-- Khung hiển thị hình ảnh tương tác chính -->
+      <div id="image">Di chuột qua hình ảnh bên dưới để hiển thị ở đây.</div>
+
+      <!-- Thư viện ảnh thu nhỏ có gắn hàm sự kiện -->
+      <section class="gallery">
+        <img
+          src="image/image1.jpg"
+          alt="Neighborhood street"
+          tabindex="0"
+          onmouseover="upDate(this)"
+          onmouseout="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <img
+          src="image/image2.jpg"
+          alt="Neighborhood park"
+          tabindex="0"
+          onmouseover="upDate(this)"
+          onmouseout="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <img
+          src="image/image3.jpg"
+          alt="Local shops"
+          tabindex="0"
+          onmouseover="upDate(this)"
+          onmouseout="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <img
+          src="image/image4.jpg"
+          alt="People outside"
+          tabindex="0"
+          onmouseover="upDate(this)"
+          onmouseout="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <img
+          src="image/image5.jpg"
+          alt="Trees in the neighborhood"
+          tabindex="0"
+          onmouseover="upDate(this)"
+          onmouseout="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 My Neighborhood</p>
+    </footer>
+
+    <!-- Nhúng file script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
